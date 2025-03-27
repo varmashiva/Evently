@@ -1,0 +1,778 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  overflow-y: auto;
+}
+
+/* font satoshi */
+@font-face {
+  font-family: 'satoshi'; /* Define a name for your custom font */
+  src: url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf') format('woff2'), /* Path to the font file */
+       url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf') format('woff'); /* Fallback for older browsers */
+  font-weight: bolder; /* You can specify different weights (normal, bold) */
+  font-style: normal;  /* You can specify normal or italic */
+}
+
+@font-face {
+  font-family: 'satoshi'; /* Define a name for your custom font */
+  src: url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('woff2'), /* Path to the font file */
+       url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('woff'); /* Fallback for older browsers */
+  font-weight: bold; /* You can specify different weights (normal, bold) */
+  font-style: normal;  /* You can specify normal or italic */
+}
+
+@font-face {
+  font-family: 'satoshi'; /* Define a name for your custom font */
+  src: url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf') format('woff2'), /* Path to the font file */
+       url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf') format('woff'); /* Fallback for older browsers */
+  font-weight: 500; /* You can specify different weights (normal, bold) */
+  font-style: normal;  /* You can specify normal or italic */
+}
+
+@font-face {
+  font-family: 'satoshi'; /* Define a name for your custom font */
+  src: url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf') format('woff2'), /* Path to the font file */
+       url('./assets/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf') format('woff'); /* Fallback for older browsers */
+  font-weight: 300; /* You can specify different weights (normal, bold) */
+  font-style: normal;  /* You can specify normal or italic */
+}
+
+
+
+.main-nav {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 0.6%;
+  padding-bottom: 0.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* add background color here for nav bar */
+}
+.evently-logo {
+  width: 10%;
+  padding-left: 1%;
+}
+.second-nav {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1%;
+}
+.join-evently-btn {
+  background-color: #0F680F;
+  color: white;
+  font-family: "satoshi";
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 4% 2% 4% 2%;
+  width: 65%;
+}
+.join-evently-btn:hover, .upload-event-btn:hover {
+  background-color: #E1FCE1;
+  color: #0F680F;
+}
+.sign-in-btn {
+  background-color: #E1FCE1;
+  color: #0F680F;
+  font-family: "satoshi";
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 4% 2% 4% 2%;
+  width: 45%;
+}
+.sign-in-btn:hover {
+  background-color: #0F680F;
+  color: white;
+}
+.hr-1 {
+  border: none;
+  height: 3px;
+  background-color: #F5F7F7;
+  color: #F5F7F7;
+}
+.hr-2 {
+  margin-top: 3%;
+  width: 99.5%;
+  border: none;
+  height: 1.5px;
+  background-color: #bababa;
+  color: #F5F7F7;
+  border-radius: 10px;
+}
+
+.three-section-btns {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1.5% 0% 1.5% 0%;
+}
+
+button {
+  font-family: "satoshi";
+  font-weight: 500;
+  font-size: 13px;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8% 1% 0.8% 1%;
+  margin: 0% 1% 0% 1%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark {
+  background-color: #0F680F; /* Dark green */
+  color: white;
+  letter-spacing: 2px;
+}
+
+.btn-light {
+  background-color: #E1FCE1; /* Light green */
+  color: #0F680F;
+  letter-spacing: 2px;
+}
+
+.discover-body {
+  background-color: #F5F7F7;
+}
+
+.search-input {
+  margin-top: 2%;
+}
+.discover-events {
+  width: 70%;
+  margin-top: 3%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.vinnu-gollakoti {
+  width: 70%;
+  margin-left: 15%;
+  background-color: #F5F7F7;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+.discover-events2{
+  width: 96%;
+  margin-top: 3%;
+  background-color: #F5F7F7;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.event-image {
+  width: 65%;
+  height: 30rem;
+  border-radius: 10px;
+}
+.event-details {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  height: 30rem;
+}
+.event-heading {
+  font-size: 30px;
+  font-family: "satoshi";
+  margin-top: 6%;
+  margin-left: 4%;
+}
+.tag-div {
+  margin-left: 4%;
+  margin-top: 4%;
+}
+.tag {
+  font-size: 14px;
+  color: grey;
+  font-family: "satoshi";
+  font-weight: 500;
+}
+.link-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 4%;
+}
+.link-image {
+  margin-left: 4%;
+  width: 35px;
+  margin-top: 3%;
+}
+.link-input {
+  margin-top: 1.5%;
+  height: 25px;
+  font-family: "satoshi";
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+.link-input-1 {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.copy-btn {
+  border-radius: 10px;
+  background-color: #E1FCE1;
+  color: #0F680F;
+  width: 100%;
+}
+.location-div {
+  display: flex;
+  align-items: center;
+  margin-left: 4.5%;
+  margin-top: 5%;
+}
+.fee-div {
+  display: flex;
+  align-items: center;
+  margin-left: 4.5%;
+  margin-top: 5%;
+}
+.straight-line {
+  height: 3.5rem;
+  width: 4px;
+  border-radius: 10px;
+  background-color: #0F680F;
+}
+.location-details-div {
+  margin-left: 3%;
+}
+.fee-details-div{
+margin-left: 3%;
+}
+.happening-in {
+  color: rgb(56, 56, 56);
+  font-family: "satoshi";
+  font-weight: 300;
+}
+.kalasalingam-univeristy-p {
+  color: black;
+  font-family: "satoshi";
+  font-weight: 500;
+}
+.registration-fee {
+  color: rgb(56, 56, 56);
+  font-family: "satoshi";
+  font-weight: 300;
+}
+.event-price {
+  color: rgb(56, 56, 56);
+  font-family: "satoshi";
+  font-weight: 500;
+}
+.event-deadline {
+  margin-top: 5%;
+  margin-left: 4.5%;
+  background-color: #E1FCE1;
+  width: 85%;
+  border-radius: 10px;
+  padding: 3% 2% 3% 2%;
+}
+.application-date {
+  font-family: "satoshi";
+  font-weight: 500;
+  padding-left: 2%;
+  color: #0F680F;
+}
+.timer {
+  font-family: "satoshi";
+  font-weight: bolder;
+  color: #0F680F;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+.more-details-div {
+  margin-top: 3%;
+  margin-left: 4.5%;
+  width: 85%;
+  padding: 2% 2% 2% 2%;
+  cursor: pointer;
+  background-color: #0F680F;
+  color: white;
+  border-radius: 10px;
+}
+.more-details {
+  font-family: "satoshi";
+  font-weight: 500;
+  padding: 2% 2% 2% 2%;
+}
+.more-details-div:hover {
+  background-color: #2c9a2c;
+}
+
+
+
+
+/* styles for event_details page */
+.page2-body {
+  background-color: #F5F7F7;
+  margin-top: 1.5%;
+}
+.page2-title {
+  font-family: "satoshi";
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  margin-top: 1.5%;
+}
+.page2-details {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1.5%;
+  background-color: #F5F7F7;
+  display: flex;
+  justify-content: space-between;
+}
+.page2-main-details{
+  width: 63.5%;
+}
+.page2-sticky-details {
+  width: 22.5%;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  right: 15%;
+  padding: 1%;
+  padding-top: 2%;
+}
+.event-image1 {
+  width: 100%;
+  height: 30rem;
+  border-radius: 10px;
+}
+.page2-main-details-1 {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 1%;
+  padding: 2%;
+  margin-bottom: 5%;
+  padding-bottom: 7%;
+}
+.page2-title2 {
+  font-family: "satoshi";
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  margin-top: 2%;
+}
+.page2-description {
+  font-family: "satoshi";
+  font-weight: 300;
+  margin-top: 3.5%;
+}
+.page2-location-date {
+  display: flex;
+}
+.straight-line2 {
+  height: 6.5rem;
+  width: 4px;
+  border-radius: 10px;
+  background-color: #0F680F;
+}
+.page2-location-date-textbox{
+  width: 90%;
+}
+.page2-date, .page2-location {
+  padding-left: 2%;
+  font-family: "satoshi";
+}
+.runs-from {
+  margin-top: 1%;
+}
+.runs-from, .happening-in2{
+  font-weight: 300;
+  font-size: medium;
+}
+.page2-date-text, .page2-location-text {
+  font-weight: 500;
+  font-size: 16px;
+}
+.page2-location {
+  margin-top: 2%;
+}
+.page2-winnings {
+  padding-left: 2%;
+  width: 98%;
+  padding-bottom: 4%;
+  margin-top: 5%;
+  border-radius: 5px;
+  background-color: #F5F7F7;
+}
+.winnings {
+  font-family: "satoshi";
+  font-weight: bold;
+  color: #353535;
+  padding-top: 4%;
+  font-size: 18px;
+  margin-left: 9%;
+  margin-bottom: 2%;
+}
+.prize-money-text, .prize-money-amount, .dash{
+  font-family: "satoshi";
+  font-weight: 500;
+  color: #353535;
+  margin-top: 2%;
+}
+.first-prize-div, .credits-div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 9%;
+}
+.page2-credits-bg, .page2-fee-bg {
+  background-color: #F5F7F7;
+  margin-top: 4%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  border-radius: 5px;
+}
+.event-deadline2 {
+  margin-top: 5%;
+  background-color: #E1FCE1;
+  width: 96%;
+  border-radius: 5px;
+  padding: 3% 2% 3% 2%;
+}
+.apply-here-btn {
+  padding: 4% 2% 4% 2% ;
+  margin: 0px;
+ width: 100%;
+ cursor: pointer;
+ margin-top: 4%;
+ border-radius: 5px;
+ background-color: #0F680F;
+ font-size: 18px;
+ color: white;
+}
+.apply-here-btn:hover {
+  background-color: #2c9a2c;
+}
+.prize-pool-div {
+  background-color: #f5f7f7;
+  margin-top: 3.5%;
+  border-radius: 5px;
+  padding: 3% 0% 3% 0%;
+}
+.mega-prize-pool {
+  font-family: "satoshi";
+  font-weight: bold;
+  font-size: 30px;
+}
+.available-in-prizes {
+  font-family: "satoshi";
+  font-weight: 500;
+  font-size: 18px;
+}
+.organizers-text {
+  font-family: "satoshi";
+  font-weight: Bold;
+  margin-top: 3.5%;
+  font-size: 30px;
+}
+.organizing-people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+
+}
+.people-div, .people-div2 {
+  display: flex;
+  width: 35%;
+  background-color: #F5F7F7;
+  padding: 2%;
+  border-radius: 5px;
+
+}
+.people-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+}
+.people-info {
+  padding-left: 5%;
+}
+.people-name {
+  font-family: "satoshi";
+  font-weight: 500;
+  font-size: 18px;
+}
+.people-contact {
+  font-family: "satoshi";
+  font-weight: 300;
+  font-size: 15px;
+}
+.people-div2 {
+  margin-top: 3%;
+  margin-left: 30%;
+}
+.form-body {
+  background-color: #F5F7F7;
+  width: 100%;
+}
+.form {
+  background-color: #ffffff;
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 3%;
+  height: 80vh;
+  border-radius: 10px;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+.page3-clubname-eventname, .page3-fee-deadline, .page3-startdate-enddate, .page3-starttime-endtime, .page3-prizepool-placespool,.page3-noofcredits-typeofcredits, .page3-clublogo-eventposter, .page3-organizername-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.page3-clubname, .page3-eventname, .page3-fee, .page3-deadline, .page3-startdate, .page3-enddate, .page3-starttime, .page3-endtime, .page3-prizepool, .page3-placespool, .page3-noofcredits, .page3-typeofcredits, .page3-clublogo, .page3-eventposter, .page3-organizername, .page3-contact{
+  width: 48%;
+}
+label {
+  font-family: "satoshi";
+  font-weight: 500;
+  color: #0F680F;
+}
+.text-input {
+  background-color: #F5F7F7;
+  width: 96%;
+  border: none;
+  padding: 3% 0% 3% 3%;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+.prize-amount-input {
+  background-color: #F5F7F7;
+  width: 92.5%;
+  border: none;
+  padding: 10% 0% 10% 5%;
+  border-radius: 5px;
+  margin-top: 4%;
+}
+.text-input:focus, .text-input2:focus, .prize-amount-input:focus{
+  outline: none;
+  border: 1px solid #4CAF50;
+}
+.text-input2 {
+  background-color: #F5F7F7;
+  width: 98%;
+  border: none;
+  padding: 1.5% 0% 1.5% 1.5%;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+.page3-eventlink, .page3-fee-deadline, .page3-eventlocation, .page3-startdate-enddate, .page3-starttime-endtime, .page3-prizepool-placespool, .page3-tags, .page3-noofcredits-typeofcredits, .page3-clublogo-eventposter, .page3-eventdiscription, .page3-organizername-contact, .upload-event-btn-div {
+  margin-top: 3%;
+}
+.page3-placespool {
+  display: flex;
+  justify-content: space-evenly;
+align-items: center;
+}
+.medal {
+  font-size: 20px;
+}
+.upload-event-btn-div {
+  margin-bottom: 1%;
+}
+.upload-event-btn {
+  padding: 2% 3% 2% 3%;
+  background-color: #0F680F;
+  font-family: "satoshi";
+  font-weight: 500;
+  color: white;
+  font-size: 15px;
+}
+.page3-photos-upload {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3.5%;
+}
+.photos-upload-section {
+  width: 30%;
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.image-input {
+  font-family: "satoshi";
+  font-weight: 300;
+  border: none;
+}
+.page4-edit-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.edit-btns-link {
+  border-radius: 10px;
+  padding: 1% 2.5% 1% 2.5%;
+  font-size: 15px;
+  background-color: #0F680F;
+  color: white;
+  margin-bottom: 2%;
+  width: 20%;
+}
+
+.edit-btns {
+  padding: 1% 2.5% 1% 2.5%;
+  font-size: 15px;
+  background-color: #0F680F;
+  color: white;
+  width: 20%;
+  margin-bottom: 2%;
+}
+
+.edit-btns:hover {
+  background-color: #E1FCE1;
+  color: #0F680F;
+}
+
+.page5-signup {
+  margin-top: 5%;
+  font-family: "satoshi";
+  font-weight: black;
+  font-size: 30px;
+}
+
+.page5-signin-tag {
+  margin-top: 2%;
+  font-family: "satoshi";
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.terms-conditions {
+  font-family: "satoshi";
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 3%;
+}
+.go-green {
+  color: #2c9a2c;
+}
+
+
+
+
+/*  */
+.modal2, .overlay1 {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.overlay1 {
+  background: #d1dad19c;
+}
+.modal2-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: 600px;
+  min-width: 300px;
+  box-sizing: border-box;
+  width: 40%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+.wallets-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3%;
+}
+.wallet {
+  height: 20px;
+  justify-self: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 5% 8.8% 5% 8.8%;
+  border-radius: 13px;
+  transition: opacity 0.3s;
+}
+/* Style for the selected box */
+.wallet.selected {
+  opacity: 1;
+}
+/* Style for non-selected boxes */
+.wallet.deselected {
+  opacity: 0.5;
+}
+.metamask-icon {
+  width: 25px;
+}
+.backpack-icon, .xverse-icon {
+  width: 33px;
+}
+.backpack-icon1, .xverse-icon1 {
+  width: 30px;
+}
+.add-wallet-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+.plusbutton-div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.history-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal2-update-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputs-transaction{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin-left: 5%;
+  height: fit-content;
+}
+.main-transaction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  align-items: flex-start;
+}
+.wallet-inputs{
+  width: 60%;
+}

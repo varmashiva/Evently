@@ -1,0 +1,518 @@
+.winners-table-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #E1FCE1; /* Light green */
+    border-radius: 8px;
+  }
+  
+  .table-title {
+    text-align: center;
+    font-family: "satoshi";
+    font-weight: 500;
+    font-size: 24px;
+    color: #0F680F; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  .winners-table {
+    width: 100%;
+    font-family: "satoshi";
+    font-weight: 300;
+    border-collapse: collapse;
+  }
+  
+  .winners-table th, .winners-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #0F680F; /* Dark green border */
+  }
+  
+  .winners-table th {
+    background-color: #0F680F; /* Dark green */
+    color: white;
+  }
+  
+  .winners-table tr:nth-child(even) {
+    background-color: #E1FCE1; /* Light green */
+  }
+  
+  .winners-table tr:nth-child(odd) {
+    background-color: #F9F9F9; /* Light gray for odd rows */
+  }
+  
+  .winners-table td {
+    color: #0F680F; /* Dark green text color */
+  }
+  
+  /* Pagination Styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #0F680F;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #D0D0D0; /* Disabled button color */
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    color: #0F680F; /* Dark green text color */
+  }
+
+
+
+  /* Club card styling */
+.clubs-container {
+    min-height: 100vh;
+    background-color: rgb(249, 250, 251);
+    padding: 3rem 1rem;
+  }
+  
+  .content-wrapper {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #006400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    color: rgb(75, 85, 99);
+  }
+  
+  .clubs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .club-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(243, 244, 246);
+    padding: 1.5rem;
+    transition: all 300ms;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .club-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 100, 0, 0.2);
+  }
+  
+  .club-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .club-image-container {
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  .club-image-wrapper {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 100, 0, 0.1);
+  }
+  
+  .club-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .fallback-icon {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 100, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .club-info {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .club-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #006400;
+    margin-bottom: 0.5rem;
+    font-family: "satoshi";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .join-our-clubs {
+    font-family: "satoshi";
+    font-weight: 600;
+  }
+  
+  .roles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .role-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #006400;
+    background-color: rgba(0, 100, 0, 0.05);
+    transition: background-color 200ms;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .role-button:hover {
+    background-color: rgba(0, 100, 0, 0.1);
+  }
+  
+  .join-button {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #006400;
+    color: #006400;
+    font-weight: 500;
+    transition: all 200ms;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .join-button:hover {
+    background-color: #006400;
+    color: white;
+  }
+
+
+
+
+  .create-club-form {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(243, 244, 246);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #006400;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: border-color 200ms;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #006400;
+    box-shadow: 0 0 0 2px rgba(0, 100, 0, 0.1);
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 200ms;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #005300;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .role-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(0, 100, 0, 0.05);
+    border-radius: 0.375rem;
+    color: #006400;
+    font-size: 0.875rem;
+  }
+  
+  .remove-role-button {
+    background: none;
+    border: none;
+    color: #006400;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Image Upload Styles */
+  .hidden {
+    display: none;
+  }
+  
+  .image-upload-container {
+    width: 100%;
+  }
+  
+  .image-upload-box {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #D1D5DB;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 200ms;
+    background-color: rgba(0, 100, 0, 0.02);
+    gap: 0.5rem;
+  }
+  
+  .image-upload-box:hover {
+    border-color: #006400;
+    background-color: rgba(0, 100, 0, 0.05);
+  }
+  
+  .upload-icon {
+    color: #006400;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .upload-hint {
+    font-size: 0.75rem;
+    color: #6B7280;
+  }
+  
+  .preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+  }
+  
+  /* Roles Dropdown Styles */
+  .roles-dropdown-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .roles-dropdown-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    color: #374151;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 200ms;
+  }
+  
+  .roles-dropdown-button:hover {
+    border-color: #006400;
+  }
+  
+  .dropdown-icon {
+    transition: transform 200ms;
+  }
+  
+  .dropdown-icon.open {
+    transform: rotate(180deg);
+  }
+  
+  .roles-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.25rem;
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .role-option {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #374151;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 200ms;
+  }
+  
+  .role-option:hover {
+    background-color: rgba(0, 100, 0, 0.05);
+    color: #006400;
+  }
+
+
+
+  /*  */
+
+  /* Import Satoshi font family */
+
+/* Apply global styles */
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-color: #E1FCE1; /* Light background color */
+  color: #0F680F; /* Dark text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Hiring container styles */
+.hiring-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #FFFFFF; /* White background for the container */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.hiring-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0F680F; /* Dark color for the header */
+  margin-bottom: 20px;
+}
+
+/* Roles list container */
+.roles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Role card styles */
+.role-card {
+  background-color: #E1FCE1; /* Light color background for each card */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Role card header */
+.role-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0F680F; /* Dark color for club name */
+  margin-bottom: 10px;
+}
+
+/* Role description */
+.role-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333; /* Darker text for the role description */
+}
+
+/* Apply button styles */
+.apply-button {
+  background-color: #0F680F; /* Dark green background */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #075C07; /* Darker green when hovered */
+}
+
+/* Error and loading styles */
+.loading, .error {
+  font-size: 18px;
+  color: #FF6F6F; /* Red color for error messages */
+  text-align: center;
+  margin-top: 20px;
+}
